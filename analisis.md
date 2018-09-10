@@ -6,19 +6,19 @@ Javier Ramos - 16230
 # Lab 07: Reddit
 
 ## State
-```json
+```javascript
 state = {
-  "posts": {
-    byId: {
-      id: {
-        id: '',
-        title: '',
-        content: '',
-        comments: [...ids],
-        karma: 0,
+  posts: {
+    "byId": {
+      "id": {
+        "id": '',
+        "title": '',
+        "content": '',
+        "comments": [...ids],
+        "karma": 0,
       },
     },
-    order: [...ids],
+    "order": [...ids],
   },
 
   comments: {
