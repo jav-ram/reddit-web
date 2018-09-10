@@ -9,16 +9,16 @@ Javier Ramos - 16230
 ```javascript
 state = {
   posts: {
-    "byId": {
-      "id": {
-        "id": '',
-        "title": '',
-        "content": '',
-        "comments": [...ids],
-        "karma": 0,
+    byId: {
+      id: {
+        id: '',
+        title: '',
+        content: '',
+        comments: [...ids],
+        karma: 0,
       },
     },
-    "order": [...ids],
+    order: [...ids],
   },
 
   comments: {
