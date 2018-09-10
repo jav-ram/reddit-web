@@ -8,7 +8,7 @@ Javier Ramos - 16230
 ## State
 ```json
 state = {
-  posts: {
+  "posts": {
     byId: {
       id: {
         id: '',
