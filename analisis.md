@@ -59,10 +59,12 @@ state = {
 #### SetKarma:
 * **params:** 
   * **up**: valor para saber si es un upvote o un downvote (booleano).
+  * **id**: identificador del post al cual darle o quitarle karma.
 * **return:** 
   * **type:** "KARMA_SETTED"
   * **payload:** 
     * **up:** valor para saber si es un upvote o un downvote (booleano).
+    * **id**: identificador del post al cual darle o quitarle karma.
 
 #### Post:
 * **params:** 
