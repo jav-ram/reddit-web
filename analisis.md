@@ -74,16 +74,6 @@ state = {
     * **title**: El titulo de la publicación (String).
     * **content**: Contenido de la publicación (String).
 
-#### addComment:
-* **params:** 
-  * **id**: Identificador de la publicación (String).
-  * **idComment:** Identificador del comentario (String).
-* **return:** 
-  * **type:** "COMMENTED"
-  * **payload:** 
-    * **id**: Identificador de la publicación (String).
-    * **idComment:** Identificador del comentario (String).
-
 #### Comment:
 * **params:** 
   * **id**: Identificador de la publicación (String).
