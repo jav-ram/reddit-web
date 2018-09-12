@@ -1,12 +1,14 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 
+import './comment.css';
+
 import * as selectores from '../../reducers';
 
 const comment = ({
     text
 }) => (
-    <div>
+    <div className="comment">
         <p> { text } </p>
     </div>
 );

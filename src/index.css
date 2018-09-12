@@ -1,5 +1,10 @@
 body {
+  background: rgb(252, 237, 212);
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+#root {
+  padding: 0 auto;
 }

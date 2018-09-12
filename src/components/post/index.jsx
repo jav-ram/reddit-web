@@ -1,6 +1,8 @@
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
 
+import './post.css';
+
 import * as selectores from '../../reducers';
 
 import * as actions from '../../actions';
@@ -19,18 +21,21 @@ const Post = ({
     <li className="post">
         <h3 className="title"> { title } </h3>
         <p className="content"> { content } </p>
-        <div>
-            <button onClick={() => onClick(1)}>UP</button>
-            <button onClick={() => onClick(-1)}>DOWN</button>
-            <p> { karma } </p>
+        <div className="footer">
+            <button className="upvote" onClick={() => onClick(1)}><p>&#9650;</p></button>
+            <button className="downvote" onClick={() => onClick(-1)}><p>&#9660;</p></button>
+            <p className="karma"> karma: { karma } </p>
         </div>
-        <ul>
-            {
-                commentList.map(
-                    comment => <Comment key={comment.id} id={comment.id} />
-                )
-            }
-        </ul>
+        <div className="CommentList">
+            <h4> Comentarios: </h4>
+            <ul>
+                {
+                    commentList.map(
+                        comment => <Comment key={comment.id} id={comment.id} />
+                    )
+                }
+            </ul>
+        </div>
 
         <AddComment idP={id}/>
 

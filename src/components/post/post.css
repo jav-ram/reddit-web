@@ -1,0 +1,54 @@
+.post {
+    background: white;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    list-style: none;
+    width: 50rem;
+    margin: 2rem 0rem;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    height: 2rem;
+    align-items: center;
+}
+
+.footer .upvote {
+    border: 0rem;
+    padding: 0rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 0.1rem;
+    font-size: 2.5rem;
+    box-sizing: content-box;
+}
+
+.footer .upvote p {
+    margin: 0rem;
+    line-height: 1rem;
+    width: 1rem;
+    text-align: center;
+}
+
+.footer .downvote {
+    border: 0rem;
+    padding: 0rem;
+    width: 2rem;
+    height: 2rem;
+    margin: 0rem 0.1rem;
+    font-size: 2.5rem;
+    box-sizing: content-box;
+}
+
+.footer .downvote p {
+    margin: 0rem;
+    line-height: 1rem;
+    width: 1rem;
+    text-align: center;
+}
+
+.karma {
+    margin: 0rem 0.3rem;
+}
+

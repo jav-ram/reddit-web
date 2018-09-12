@@ -18,7 +18,7 @@ const AddPost = ({
     }}>
         <input className="title" ref={node => this.title = node} placeholder="Titulo"  />
         <input className="content" ref={node => this.content = node} placeholder="Contenido"  />
-        <input className="submit" type="submit" />
+        <input className="submit" type="submit" value="Publicar" />
     </form>
 )
 
