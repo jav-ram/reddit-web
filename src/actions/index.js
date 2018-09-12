@@ -1,13 +1,13 @@
 import * as types from '../types';
 
 export const setKarma = (
-    up,
-    karma,
+    id,
+    dir,
 ) => ({
     type: types.KARMA_SETTED,
     payload: {
-        up,
-        karma
+        id,
+        dir,
     }
 });
 
@@ -18,8 +18,9 @@ export const post = (
 ) => ({
     type: types.POSTED,
     payload: {
+        id,
         title,
-        content
+        content,
     }
 });
 

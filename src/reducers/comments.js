@@ -37,6 +37,12 @@ const order = (state = [], action) => {
     }
 }
 
+// selectores
+export const getComment = (state, id) => state.byId[id];
+export const getComments = (state) => state.order.map(
+    id => getComment(state, id),
+);
+
 // combine reducers
 const comments = combineReducers({byId, order});
 

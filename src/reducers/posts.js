@@ -35,6 +35,20 @@ const byId = (state = {}, action) => {
             };
         }
 
+        case types.KARMA_SETTED: {
+            const { id, dir } = action.payload;
+            const post = state[id];
+            console.log(post, dir);
+            const karma = post.karma;
+            return {
+                ...state,
+                [id]: {
+                    ...post,
+                    karma: post.karma + parseInt(dir),
+                }
+            }
+        }
+
         default: {
             return state;
         }
@@ -47,7 +61,7 @@ const order = (state = [], action) => {
         case types.POSTED: {
             return [
                 ...state,
-                action.id,
+                action.payload.id,
             ];
         }
         
@@ -59,5 +73,13 @@ const order = (state = [], action) => {
 
 // combine reducers
 const posts = combineReducers({byId, order});
+
+// selectores
+export const getPost = (state, id) => state.byId[id];
+export const getPosts = (state) => state.order.map(
+    id => getPost(state, id),
+);
+export const getCommentIdsFromPost = (state, id) => state.byId[id].comments;
+
 
 export default posts;
